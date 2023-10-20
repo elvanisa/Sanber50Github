@@ -10,7 +10,15 @@
 //
 //
 // -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
+Cypress.Commands.add('login', (user_name, paswwr) => {
+    cy.get('#user-name').clear().type(user_name)
+    cy.get('[data-test="password"]').type(paswwr)
+    cy.get('.submit-button.btn_action').click()
+})
+
+Cypress.Commands.add('ketik', (locator,value) => {
+    cy.get(locator).clear().type(value)
+})
 //
 //
 // -- This is a child command --
