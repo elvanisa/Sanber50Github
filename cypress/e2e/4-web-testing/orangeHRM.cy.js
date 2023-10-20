@@ -1,6 +1,6 @@
-describe('Web UI Saucedemo', () => {
-    it('Login Saucedemo', () => {
-        cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+describe('Web UI orangeHRM', () => {
+    it('Login orangeHRM', () => {
+        cy.visit(Cypress.env('orangeHRM'))
         cy.get('[name="username"]').type('username')
 
     })
