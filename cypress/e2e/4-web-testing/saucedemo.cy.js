@@ -9,7 +9,7 @@ describe('Web UI Saucedemo', () => {
         cy.get('[data-test="error"]').should('contain.text', 'Username and password do not match any user in this service')
     })
     it('Failed Login Saucedemo - Locked User', () => {
-        cy.get('#user-name').clear().type('locked_out_user')
+        cy.get('#user-name').clear().type(Cypress.env('lockedUser'))
         cy.get('[data-test="password"]').type('secret_sauce')
         cy.get('.submit-button.btn_action').click()
         cy.get('[data-test="error"]').should('contain.text', 'Sorry, this user has been locked out')
