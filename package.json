@@ -1,0 +1,22 @@
+{
+  "name": "sanber50github",
+  "version": "1.0.0",
+  "description": "nama: sanber 50 kelas: SQA Intensive pertemuan: day 13",
+  "main": "filebaru.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elvanisa/Sanber50Github.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elvanisa/Sanber50Github/issues"
+  },
+  "homepage": "https://github.com/elvanisa/Sanber50Github#readme",
+  "devDependencies": {
+    "cypress": "^13.3.1"
+  }
+}
