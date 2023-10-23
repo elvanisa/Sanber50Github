@@ -1,0 +1,14 @@
+name: Regression API tests
+on: push
+jobs:
+  cypress-run:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      # Install npm dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Cypress regression api run
+        with:
+          spec: cypress/e2e/3-api-testing/reqres.cy.js
+          browser: chrome
