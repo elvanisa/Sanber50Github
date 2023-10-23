@@ -4,7 +4,11 @@
   "description": "nama: sanber 50 kelas: SQA Intensive pertemuan: day 13",
   "main": "filebaru.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "reqres": "npx cypress run --spec 'cypress/e2e/3-api-testing/reqres.cy.js'",
+    "saucedemo": "npx cypress run --browser chrome --spec 'cypress/e2e/4-web-testing/saucedemo.cy.js'",
+    "web-test": "npx cypress run --browser chrome --spec 'cypress/e2e/4-web-testing/*.cy.js'"
+
   },
   "repository": {
     "type": "git",
